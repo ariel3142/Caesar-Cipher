@@ -1,0 +1,164 @@
+/* Global reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    background-color: #008004; /* Set default background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    height: 100%;
+}
+
+/* Full-page background styling for the cover */
+.cover-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #02e0ce, #3e05ea);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Centered container styling for the cover page */
+.cover-container {
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cover-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cover-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #6c63ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #5753d4;
+}
+
+/* Application Container Styling */
+.app-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #0c000c, #06000a); /* Full screen gradient background */
+}
+
+/* Centered container styling */
+.container {
+    text-align: center;
+    background-color: #044cf3; /* Set the container color to match if needed */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Title styling */
+.container h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Form label styling */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Input and textarea styling */
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Button container */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"] {
+    background-color: #030213;
+    color: #fff;
+}
+
+button[type="button"]:hover {
+    background-color: #5753d4;
+}
+
+button[type="reset"] {
+    background-color: #f10909;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #d43a3a;
+}
+
+/* Output section styling */
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    font-size: 1em;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

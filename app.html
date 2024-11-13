@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kriptografi Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Kriptografi Caesar Cipher</h1>
+        <form id="cipherForm">
+            <label for="message">Masukan Pesan</label>
+            <textarea id="message" placeholder="Masukkan yang diperbolehkan: huruf"></textarea>
+
+            <label for="key">Kunci</label>
+            <input type="number" id="key" min="1" max="25" placeholder="Masukan yang diperbolehkan: angka(1-25)">
+
+            <div class="buttons">
+                <button type="button" onclick="encryptMessage()">Enkripsi</button>
+                <button type="button" onclick="decryptMessage()">Dekripsi</button>
+                <button type="reset">Batal</button>
+            </div>
+        </form>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
